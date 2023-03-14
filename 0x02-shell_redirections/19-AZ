@@ -1,0 +1,2 @@
+#!/bin/bash 
+sed -i 's/Z/Z/g; s/e/e/g' 19-AZ

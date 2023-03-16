@@ -1,0 +1,3 @@
+#!/bin/bash
+Base_10=$((2#"$BINARY")) 
+echo $Base_10

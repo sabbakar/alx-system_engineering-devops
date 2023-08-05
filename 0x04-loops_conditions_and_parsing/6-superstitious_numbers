@@ -7,19 +7,21 @@ i=0
 while [ $i -ne 20 ]
 do
         i=$((i+1))
-        if [ $i -eq 4 ]
-                then
-			echo "$i"
-                        echo "bad luck from China"
-        elif [ $i -eq 9 ]
-                then
-			echo "$i"
-                        echo "bad luck from Japan"
-	elif [ $i -eq 17 ]
-		then
-			echo "$i"
-			echo "bad luck from Italy"
-        else
+        case $i in
+		4 )
+               	 echo "$i"
+                 echo "bad luck from China"
+		 ;;
+		
+		9 )
+		 echo "$i"
+                 echo "bad luck from Japan"
+		 ;;
+		17 )
+		 echo "$i"
+		 echo "bad luck from Italy"
+		 ;;
+		* )
                 echo "$i"
-        fi
+	esac
 done

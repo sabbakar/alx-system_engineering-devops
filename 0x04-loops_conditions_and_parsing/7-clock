@@ -6,7 +6,7 @@ i=0
 while [ $i -le 12 ]
 do
 	i=$((i+1))
-	echo "hour: $((i - 1))"
+	echo "Hour: $((i - 1))"
 	j=0
 	while [ $j -le 59 ]
 	do

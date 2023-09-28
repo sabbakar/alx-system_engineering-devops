@@ -5,6 +5,7 @@
 # Your SSH client configuration must be configured to refuse to authenticate using a password
 file {'/root/.ssh/config':
   ensure  => present,
-  content => 'Host *\n IdentityFile ~/.ssh/school \n
-              PasswordAuthentication no',
+  content => 'Host *
+      IdentityFile ~/.ssh/school
+      PasswordAuthentication no',
   }

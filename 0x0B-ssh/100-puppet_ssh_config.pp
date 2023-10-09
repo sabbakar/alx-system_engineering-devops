@@ -3,9 +3,10 @@
 
 # Your SSH client configuration must be configured to use the private key ~/.ssh/school
 # Your SSH client configuration must be configured to refuse to authenticate using a password
-file {'/root/.ssh/config':
+file {'some changes':
   ensure  => present,
-  content => 'Host *
+  path    => '/etc/ssh/ssh_config',
+  content => '
       IdentityFile ~/.ssh/school
       PasswordAuthentication no',
   }

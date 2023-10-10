@@ -6,4 +6,3 @@ echo 'location / {
 }' | sudo tee /etc/nginx/conf.d/hello_world.conf
 sudo sed -i 's/listen 80;/listen 80;/g' /etc/nginx/nginx.conf
 sudo service nginx restart
-~                             

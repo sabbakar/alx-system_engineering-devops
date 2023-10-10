@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 sudo apt install nginx -y
+ufw allow 'Nginx HTTP'
 sudo service nginx start
 echo 'location / {
     return 200 "Hello World!\n";

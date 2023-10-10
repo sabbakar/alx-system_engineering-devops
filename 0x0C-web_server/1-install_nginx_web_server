@@ -2,8 +2,6 @@
 sudo apt install nginx -y
 ufw allow 'Nginx HTTP'
 sudo service nginx start
-echo 'location / {
-    return 200 "Hello World!\n";
-}' | sudo tee /etc/nginx/conf.d/hello_world.conf
+echo "Hello World!" > /var/www/html/index.html
 sudo sed -i 's/listen 80;/listen 80;/g' /etc/nginx/nginx.conf
 sudo service nginx restart

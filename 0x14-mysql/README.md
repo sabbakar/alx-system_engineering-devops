@@ -1,1 +1,1 @@
-A "mySQL" projects
+Solution to Mysql
